@@ -31,3 +31,19 @@ With zero gap, the Lomb-Scargle spectrum displays all four signals with unit amp
 
 ----
 
+While various combinations of switches maybe applied to the analysis with the output being produced for any data-gap, in what follows, for the purposes of an example, Lomb-Scargle amplitudes will be produced from a noiseless time-series with a data-gap of 50% (see Figure 1) that is:
+(a) unpadded, abruptly cut-off gap (inverse top-hat),
+(b) padded, abruptly cut-off gap (inverse top-hat),
+(c) unpadded, tapered gap (Tukey, 51 elements for each taper),
+(d) padded, tapered gap (Tukey, 51 elements for each taper).
+
+For simplification the LS amplitudes around the first peak of 10 cycles per day (Figure 2, *left*) will be displayed. Figure 3 illustrates these examples in four plots.
+
+----
+
+<img src="https://user-images.githubusercontent.com/81772405/201485322-32cb6bb4-54f4-4695-9442-487f61794dd6.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201485336-8417517a-3c95-47d0-b129-784ef04ab864.jpg" width="390" />
+<img src="https://user-images.githubusercontent.com/81772405/201485363-6dda6974-2bff-4952-8227-496569bb60a1.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201485371-026b14d7-e42f-4c70-83d0-880c5b15dda8.jpg" width="390" />
+
+**Figure 3:** Plots of the 10 cycles per day peak for a time-series with a centralized gap extent of 50% of the time-range for the examples (a)-(d) as described in the text.
+
+----
