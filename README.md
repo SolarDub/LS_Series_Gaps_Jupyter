@@ -1,6 +1,6 @@
 # LS_Series_Gaps_Jupyter
 
-This routine analyses the effect of data gaps on the spectral output of the Lomb-Scargle (LS) algorithm applied to a sythetic harmonic time-series.
+This routine analyses the effect of data gaps on the spectral output of the Lomb-Scargle (LS) algorithm applied to a synthetic, harmonic time-series.
 The gaps may be padded with zeros or simple jumps from the end of one data sequence to the beginning of the next.
 The gaps may also be cut-off abruptly (using an inverse top-hat window function) or tapered through the used of a Tukey filter.
 
@@ -76,5 +76,21 @@ The latter case is illustrated by Figure 5 where taper length is plotted against
 <img src="https://user-images.githubusercontent.com/81772405/201490402-d5176e4b-fe74-4574-a1c6-e11ad743ee59.jpg" width="390" />
 
 **Figure 5:** (Assumed) Linear relationship between the elemental taper langth and the amplitude of the 10 c/d spectral peak.
+
+----
+
+The analysis can be extended to cover the full range of gap sizes from 0% to 99%. Naturally, this can be performed for all cases illustrated in Figure 3 and for the full range of taper lengths. However, only two cases are reproduced here: unpadded and padded gaps (Figures 6 & 7, respectively), tapered with a 6-element filter.
+
+----
+
+<img src="https://user-images.githubusercontent.com/81772405/201491936-b518344c-4703-4877-9610-3db60f8e80d1.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201492473-5c657320-a773-40ee-bf46-9dd8dcdeefa5.jpg" width="390" />
+
+**Figure 6**: *Left*: Spectral amplitudes around the 10 c/d peak for the 0-99% range of gap extents. The colormap extends from dark red (unity) to dark blue (zero). 
+
+----
+
+<img src="https://user-images.githubusercontent.com/81772405/201491946-8bf9dd20-9309-4cfe-bb69-76b3cc8f3162.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201492465-bc523e5e-007b-4f42-a1c9-a337b8942c70.jpg" width="390" />
+
+**Figure 7**: As Figure 6, but with the data gap padded with zeros.
 
 ----
