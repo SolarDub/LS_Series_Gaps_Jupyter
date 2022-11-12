@@ -71,7 +71,7 @@ To investigate the effects of taper size on the form of the spectral peaks, the 
 
 ----
 
-<img src="https://user-images.githubusercontent.com/81772405/201490092-2ce8be83-96c5-46f2-832d-985fc73db26f.jpg" width="390" />
+<img src="https://user-images.githubusercontent.com/81772405/201490402-d5176e4b-fe74-4574-a1c6-e11ad743ee59.jpg" width="390" />
 
 **Figure 5:** (Assumed) Linear relationship between the elemental taper langth and the amplitude of the 10 c/d spectral peak.
 
