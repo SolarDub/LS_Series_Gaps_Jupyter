@@ -83,13 +83,13 @@ The analysis can be extended to cover the full range of gap sizes from 0% to 99%
 
 ----
 
-<img src="https://user-images.githubusercontent.com/81772405/201491936-b518344c-4703-4877-9610-3db60f8e80d1.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201492473-5c657320-a773-40ee-bf46-9dd8dcdeefa5.jpg" width="390" />
+<img src="https://user-images.githubusercontent.com/81772405/201492671-d953f814-2750-4d68-808b-89c091f88c0a.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201492473-5c657320-a773-40ee-bf46-9dd8dcdeefa5.jpg" width="390" />
 
 **Figure 6**: *Left*: Spectral amplitudes around the 10 c/d peak for the 0-99% range of gap extents. The colormap extends from dark red (unity) to dark blue (zero). 
 
 ----
 
-<img src="https://user-images.githubusercontent.com/81772405/201491946-8bf9dd20-9309-4cfe-bb69-76b3cc8f3162.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201492465-bc523e5e-007b-4f42-a1c9-a337b8942c70.jpg" width="390" />
+<img src="https://user-images.githubusercontent.com/81772405/201492660-0e59fc23-988e-4f82-af2b-4decd2b944a2.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201492465-bc523e5e-007b-4f42-a1c9-a337b8942c70.jpg" width="390" />
 
 **Figure 7**: As Figure 6, but with the data gap padded with zeros.
 
