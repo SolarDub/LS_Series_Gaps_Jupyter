@@ -33,10 +33,12 @@ With zero gap, the Lomb-Scargle spectrum displays all four signals with unit amp
 
 While various combinations of switches maybe applied to the analysis with the output being produced for any data-gap, in what follows, for the purposes of an example, Lomb-Scargle amplitudes will be produced from a noiseless time-series with a data-gap of 50% (see Figure 1) that is:
 
-- (a) unpadded, abruptly cut-off gap (inverse top-hat),
-- (b) padded, abruptly cut-off gap (inverse top-hat),
-- (c) unpadded, tapered gap (Tukey, 51 elements for each taper),
-- (d) padded, tapered gap (Tukey, 51 elements for each taper).
+<ol type="a">
+  <li>unpadded, abruptly cut-off gap (inverse top-hat),</li>
+  <li>padded, abruptly cut-off gap (inverse top-hat),</li>
+  <li>unpadded, tapered gap (Tukey, 51 elements for each taper),</li>
+  <li>padded, tapered gap (Tukey, 51 elements for each taper).</li>
+</ol>
 
 For simplification the LS amplitudes around the first peak of 10 c/d (Figure 2, *left*) will be displayed. Figure 3 illustrates these examples in four plots. Compared with the non-gapped time-series (Figure 2, *right*), the four plots show variations in amplitudes at and around the peak.
 
@@ -48,3 +50,11 @@ For simplification the LS amplitudes around the first peak of 10 c/d (Figure 2, 
 **Figure 3:** Plots of the 10 c/d peak for a time-series with a centralized gap extent of 50% of the time-range for the (a)-(d) examples described in the text.
 
 ----
+
+Figure 3, plot **(a)** shows a peak with the correct unit-amplitude as before, but with spectral leakage either side of the peak, which are artifacts of the window-function. 
+
+Plot **(b)** exhibits the same spectral leakage artifacts, but with a peak that is reduced in amplitude. This is because the LS algorithm now sees zero power within the gap that brings down the peak normalized-amplitude.
+
+The peak of plot **(c)** has a slightly lower amplitude than that of plot (a). While the gap is not considered by the LS algorithm, the extent of the Tukey filter tapering attenuates the region to zero which is seen by the LS algorithm, reflected in the slightly lower amplitude. It is worth considering what relationship, if any, the peak amplitude has with the taper length. The notable spectral leakage seen in plots (a) and (b) is somewhat suppressed by the Tukey filter, due to the smoother transition of the window function, and is one of the key reasons for its use with time-series data.
+
+Finally, plot **(d)** combines the attributes of all those seen prior. The peak amplitude is noticeably lower than plots (a) and (c) due to the inclusion of the zeros in the data gap, but also slightly lower than that of plot (b) due to the inclusion of the taper. Similar to plot (c), the spectral leakage around the peak is somewhat suppressed, compared to plots (a) and (b).
