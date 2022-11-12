@@ -1,6 +1,6 @@
 # LS_Series_Gaps_Jupyter
 
-### Introductory Remarks
+## Introductory Remarks
 
 This routine analyses the effect of data gaps on the spectral output of the Lomb-Scargle (LS) algorithm applied to a synthetic, harmonic time-series.
 The gaps may be padded with zeros or simple jumps from the end of one data sequence to the beginning of the next.
@@ -16,7 +16,7 @@ The dataset is simple: 1000 points with a 0.01 day cadence, resulting in a 10-da
 
 ----
 
-### Methodologies & Results
+## Methodologies & Results
 
 A number of time-series are created with data gaps between 0% to 99% of the full data range (i.e. 0 to 990 points in steps of 10 points), all centralized with respect to the time-series. Among other options, characteristics of the time-series may be controlled using a number of switches:
 - abrupt onset of the gap using an inverse top-hat function, or taper to zero with a Tukey filter. For the latter, the taper length is adjustable,
@@ -35,7 +35,7 @@ With zero gap, the Lomb-Scargle spectrum displays all four signals with unit amp
 
 ----
 
-##### Data Gap Production
+### Data Gap Production
 
 While various combinations of switches maybe applied to the analysis with the output being produced for any data-gap, in what follows, for the purposes of an example, Lomb-Scargle amplitudes will be produced from a noiseless time-series with a data-gap of 50% (see Figure 1) that is:
 
@@ -65,7 +65,7 @@ The peak of plot **(c)** has a slightly lower amplitude than that of plot (a). W
 
 Finally, plot **(d)** combines the attributes of all those seen prior. The peak amplitude is noticeably lower than plots (a) and (c) due to the inclusion of the zeros in the data gap, but also slightly lower than that of plot (b) due to the inclusion of the taper. Similar to plot (c), the spectral leakage around the peak is somewhat suppressed, compared to plots (a) and (b).
 
-##### Data Gap Tapering
+### Data Gap Tapering
 
 To investigate the effects of taper size on the form of the spectral peaks, the 51-element taper length that produced Figure 3 (c) was varied to 26, 16, 6 and 0 elements, respectively, that latter case relating to that illustrated in Figure 3 (a). Figure 4 (a) - (d) illustrate the spectral region around the 10 c/d peak for taper lengths of 51, 26, 16 and 6 elements, respectively. The clear difference between the plots is that while the spectral leakage artifacts are more suppressed by using a longer taper, the amplitude decreases from its maximum value (unity).
 
@@ -86,7 +86,7 @@ The latter case is illustrated by Figure 5 where taper length is plotted against
 
 ----
 
-##### Data Gap Extents
+### Data Gap Extents
 
 The analysis can be extended to cover the full range of gap sizes from 0% to 99%. Naturally, this can be performed for all cases illustrated in Figure 3 and for the full range of taper lengths. However, only two cases are reproduced here: unpadded and padded gaps (Figures 6 *left* & *right*, respectively), tapered with a 6-element filter.
 
@@ -100,7 +100,7 @@ The analysis can be extended to cover the full range of gap sizes from 0% to 99%
 
 ----
 
-### Concluding Remarks
+## Concluding Remarks
 
 This analysis has studied the effects on the form of the Lomb-Scargle frequency spectrum produced from synthetic, noiseless, harmonic time-series that can include a centralized gap, spanning 0-99% of the time-series. The gap may be in the form of a data jump, or an array of zeros. The gap can be abrupt or tapered using a Tukey filter of various lengths.
 
