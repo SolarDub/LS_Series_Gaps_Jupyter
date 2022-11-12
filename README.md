@@ -1,5 +1,7 @@
 # LS_Series_Gaps_Jupyter
 
+###Introductory Remarks
+
 This routine analyses the effect of data gaps on the spectral output of the Lomb-Scargle (LS) algorithm applied to a synthetic, harmonic time-series.
 The gaps may be padded with zeros or simple jumps from the end of one data sequence to the beginning of the next.
 The gaps may also be cut-off abruptly (using an inverse top-hat window function) or tapered through the used of a Tukey filter.
@@ -90,6 +92,8 @@ The analysis can be extended to cover the full range of gap sizes from 0% to 99%
 **Figure 6**: *Top*: Spectral amplitudes around the 10 c/d peak for the 0-99% range of gap extents. The colormaps extend from dark red (unity) to dark blue (zero).  The dashed-yellow lines enclose the amplitudes across the frequency range for the a 50% (labeled in red) data gap. *Middle* Plot of the spectral amplitudes enclosed by the dashed-yellow lines. *Bottom*: Plots of the spectral amplitudes data-strip along the 10 c/d peak over the range of percentage gap sizes. The *left* and *right* columns relate to unpadded and padded time-series gaps, respecitvely. The unpadded peak amplitudes retain approximately the same value near unity (at 0% gap, and 0.9966 at 50% gap) before dropping off for gaps sizes > 90%. Meanwhile, the spectral leakage artifacts broaden with increasing percentage gap. The padded peak amplitudes drop off noticeably with increasing percentage gap, reaching 0.7047 at 50% gap. While they do broaden somewhat with increasing gap, the spectral leakage artifacts remain somewhat suppressed when compared to their counterparts from the unpadded data.
 
 ----
+
+###Concluding Remarks
 
 This analysis has studied the effects on the form of the Lomb-Scargle frequency spectrum produced from synthetic, noiseless, harmonic time-series that can include a centralized gap, spanning 0-99% of the time-series. The gap may be in the form of a data jump, or an array of zeros. The gap can be abrupt or tapered using a Tukey filter of various lengths.
 
