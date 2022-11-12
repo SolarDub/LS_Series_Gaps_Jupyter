@@ -79,17 +79,18 @@ The latter case is illustrated by Figure 5 where taper length is plotted against
 
 ----
 
-The analysis can be extended to cover the full range of gap sizes from 0% to 99%. Naturally, this can be performed for all cases illustrated in Figure 3 and for the full range of taper lengths. However, only two cases are reproduced here: unpadded and padded gaps (Figures 6 & 7, respectively), tapered with a 6-element filter.
+The analysis can be extended to cover the full range of gap sizes from 0% to 99%. Naturally, this can be performed for all cases illustrated in Figure 3 and for the full range of taper lengths. However, only two cases are reproduced here: unpadded and padded gaps (Figures 6 *left* & *right*, respectively), tapered with a 6-element filter.
 
 ----
 
-<img src="https://user-images.githubusercontent.com/81772405/201492671-d953f814-2750-4d68-808b-89c091f88c0a.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201492473-5c657320-a773-40ee-bf46-9dd8dcdeefa5.jpg" width="390" />
+<img src="https://user-images.githubusercontent.com/81772405/201492671-d953f814-2750-4d68-808b-89c091f88c0a.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201493194-c40a8533-f698-4e19-899e-36e7baae9cf2.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201492660-0e59fc23-988e-4f82-af2b-4decd2b944a2.jpg" width="390" />
+<img src="https://user-images.githubusercontent.com/81772405/201492473-5c657320-a773-40ee-bf46-9dd8dcdeefa5.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201493353-10f13b50-21ee-46bd-9ee6-e891e8b46d1c.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201492465-bc523e5e-007b-4f42-a1c9-a337b8942c70.jpg" width="390" />
 
-**Figure 6**: *Left*: Spectral amplitudes around the 10 c/d peak for the 0-99% range of gap extents. The colormap extends from dark red (unity) to dark blue (zero). 
+**Figure 6**: *Left*: Spectral amplitudes around the 10 c/d peak for the 0-99% range of gap extents. The colormap extends from dark red (unity) to dark blue (zero). It can be seen that while the peak amplitude retains approximately the same value (until nearing the 90% gap region), the spectral artifacts broaden with increasing percentage gap. The dashed-yellow lines enclose the amplitudes across the frequency range for an unpadded 50% (labeled in red) data gap. This strip of data relates to the spectral plot of Figure 4(d). *Right*: Plot of the spectral amplitudes data-strip along the 10 c/d peak over the range of percentage gap sizes. This illustrates that the peak amplitude remains near unity (0% gap) before dropping off for gaps sizes > 90%. The amplitude value of 0.9966 at 50% gap relates to the peak value observed in Figure 4(d).
 
 ----
 
-<img src="https://user-images.githubusercontent.com/81772405/201492660-0e59fc23-988e-4f82-af2b-4decd2b944a2.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201492465-bc523e5e-007b-4f42-a1c9-a337b8942c70.jpg" width="390" />
+
 
 **Figure 7**: As Figure 6, but with the data gap padded with zeros.
 
