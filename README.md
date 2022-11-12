@@ -2,9 +2,7 @@
 
 ## Introductory Remarks
 
-This routine analyses the effect of data gaps on the spectral output of the Lomb-Scargle (LS) algorithm applied to a synthetic, harmonic time-series.
-The gaps may be padded with zeros or simple jumps from the end of one data sequence to the beginning of the next.
-The gaps may also be cut-off abruptly (using an inverse top-hat window function) or tapered through the used of a Tukey filter.
+This routine analyses the effect of data gaps on the spectral output of the Lomb-Scargle (LS) algorithm applied to a synthetic, harmonic time-series. The gaps may be padded with zeros or simple jumps from the end of one data sequence to the beginning of the next. The gaps may also be cut-off abruptly (using an inverse top-hat window function) or tapered through the used of a Tukey filter. This analysis is an offshoot of the work performed by [Munteanu et al., (2016)](https://ui.adsabs.harvard.edu/abs/2016AnGeo..34..437M/abstract), which was influential during the performed research of [Joshi et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.5854J/abstract).
 
 The dataset is simple: 1000 points with a 0.01 day cadence, resulting in a 10-day time-series. It comprises of a superposition of four in-phase sinusoidal signals with frequencies of 10, 20, 30 and 40 cycles per day (c/d), respectively, all with unit amplitudes.
 
@@ -111,4 +109,9 @@ This analysis has found that:
 - tapering the data into and out of the gaps may suppress the spectral leakage,
 - having too long a taper will reduce the peak amplitudes, but this may be overcome by rescaling the frequency spectrum,
 - having too short a taper may not adequately suppress the spectral leakage,
-- the whole process is a balancing game!
+
+## References
+
+[Joshi, S., Trust, O., Semenko, E., Williams, P.E., et al. (2022) MNRAS, 510(4), 5854.](https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.5854J/abstract)
+
+[Munteanu, C., Negrea, C., Echim, M., Mursula, K. (2016) Ann. Geophys., 34, 437.](https://ui.adsabs.harvard.edu/abs/2016AnGeo..34..437M/abstract)
