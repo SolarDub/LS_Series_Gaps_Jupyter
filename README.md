@@ -58,3 +58,21 @@ Plot **(b)** exhibits the same spectral leakage artifacts, but with a peak that 
 The peak of plot **(c)** has a slightly lower amplitude than that of plot (a). While the gap is not considered by the LS algorithm, the extent of the Tukey filter tapering attenuates the region to zero which is seen by the LS algorithm, reflected in the slightly lower amplitude. It is worth considering what relationship, if any, the peak amplitude has with the taper length. The notable spectral leakage seen in plots (a) and (b) is somewhat suppressed by the Tukey filter, due to the smoother transition of the window function, and is one of the key reasons for its use with time-series data.
 
 Finally, plot **(d)** combines the attributes of all those seen prior. The peak amplitude is noticeably lower than plots (a) and (c) due to the inclusion of the zeros in the data gap, but also slightly lower than that of plot (b) due to the inclusion of the taper. Similar to plot (c), the spectral leakage around the peak is somewhat suppressed, compared to plots (a) and (b).
+
+
+To investigate the effects of taper size on the form of the spectral peaks, the 51-element taper length that produced Figure 3 (c) was varied to 26, 16, 6 and 0 elements, respectively, that latter case relating to that illustrated in Figure 3 (a). Figure 4 (a) - (d) illustrate the spectral region around the 10 c/d peak for taper lengths of 51, 26, 16 and 6 elements, respectively. The clear difference between the plots is that while the spectral leakage artifacts are more suppressed by using a longer taper, the amplitude decreases from its maximum value (unity). This latter case is illustrated by Figure 5 where taper length is plotted against peak amplitude. A near-linear relationship is seen (and assumed) between the two.
+
+----
+
+<img src="https://user-images.githubusercontent.com/81772405/201490098-19fe49a3-eebc-4477-b4fb-6e9bb8f3fbd7.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201490104-75dcd774-604a-48c1-b5ae-75d03993e3af.jpg" width="390" />
+<img src="https://user-images.githubusercontent.com/81772405/201490108-e4169171-959a-4e26-8bec-a6ef14176d43.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201490111-0b8d4875-b0e4-4200-a28d-d5d9b53973b8.jpg" width="390" />
+
+**Figure 4:** Plots of the 10 c/d peak for a time-series with a tapered centralized gap extent of 50% of the time-range with taper lengths of (a) 51, (b) 26, (c) 16 and (d) 6 elements, respectively.
+
+----
+
+<img src="https://user-images.githubusercontent.com/81772405/201490092-2ce8be83-96c5-46f2-832d-985fc73db26f.jpg" width="390" />
+
+**Figure 5:** (Assumed) Linear relationship between the elemental taper langth and the amplitude of the 10 c/d spectral peak.
+
+----
