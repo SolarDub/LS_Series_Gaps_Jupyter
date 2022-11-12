@@ -60,14 +60,14 @@ The peak of plot **(c)** has a slightly lower amplitude than that of plot (a). W
 Finally, plot **(d)** combines the attributes of all those seen prior. The peak amplitude is noticeably lower than plots (a) and (c) due to the inclusion of the zeros in the data gap, but also slightly lower than that of plot (b) due to the inclusion of the taper. Similar to plot (c), the spectral leakage around the peak is somewhat suppressed, compared to plots (a) and (b).
 
 
-To investigate the effects of taper size on the form of the spectral peaks, the 51-element taper length that produced Figure 3 (c) was varied to 26, 16, 6 and 0 elements, respectively, that latter case relating to that illustrated in Figure 3 (a). Figure 4 (a) - (d) illustrate the spectral region around the 10 c/d peak for taper lengths of 51, 26, 16 and 6 elements, respectively. The clear difference between the plots is that while the spectral leakage artifacts are more suppressed by using a longer taper, the amplitude decreases from its maximum value (unity). This latter case is illustrated by Figure 5 where taper length is plotted against peak amplitude. A near-linear relationship is seen (and assumed) between the two.
+To investigate the effects of taper size on the form of the spectral peaks, the 51-element taper length that produced Figure 3 (c) was varied to 26, 16, 6 and 0 elements, respectively, that latter case relating to that illustrated in Figure 3 (a). Figure 4 (a) - (d) illustrate the spectral region around the 10 c/d peak for taper lengths of 51, 26, 16 and 6 elements, respectively. The clear difference between the plots is that while the spectral leakage artifacts are more suppressed by using a longer taper, the amplitude decreases from its maximum value (unity). This latter case is illustrated by Figure 5 where taper length is plotted against peak amplitude. A near-linear relationship is seen (and assumed) between the two. Any researcher using the LS algorithm with gapped data will need to balance the necessity of filtering to reduce the spectral artifacts with a reduced amplitude, although models such as described may be used to re-produced the actual amplitudes by multiplying the ampltiudes by a factor determined through the use of plots similar to Figure 5.
 
 ----
 
 <img src="https://user-images.githubusercontent.com/81772405/201490098-19fe49a3-eebc-4477-b4fb-6e9bb8f3fbd7.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201490104-75dcd774-604a-48c1-b5ae-75d03993e3af.jpg" width="390" />
 <img src="https://user-images.githubusercontent.com/81772405/201490108-e4169171-959a-4e26-8bec-a6ef14176d43.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201490111-0b8d4875-b0e4-4200-a28d-d5d9b53973b8.jpg" width="390" />
 
-**Figure 4:** Plots of the 10 c/d peak for a time-series with a tapered centralized gap extent of 50% of the time-range with taper lengths of (a) 51, (b) 26, (c) 16 and (d) 6 elements, respectively.
+**Figure 4:** Plots of the 10 c/d peak for a time-series with a tapered, centralized gap extending 50% across the time-range, with taper lengths of (a) 51, (b) 26, (c) 16 and (d) 6 elements, respectively.
 
 ----
 
