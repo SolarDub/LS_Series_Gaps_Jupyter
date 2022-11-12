@@ -1,6 +1,6 @@
 # LS_Series_Gaps_Jupyter
 
-###Introductory Remarks
+### Introductory Remarks
 
 This routine analyses the effect of data gaps on the spectral output of the Lomb-Scargle (LS) algorithm applied to a synthetic, harmonic time-series.
 The gaps may be padded with zeros or simple jumps from the end of one data sequence to the beginning of the next.
@@ -93,7 +93,7 @@ The analysis can be extended to cover the full range of gap sizes from 0% to 99%
 
 ----
 
-###Concluding Remarks
+### Concluding Remarks
 
 This analysis has studied the effects on the form of the Lomb-Scargle frequency spectrum produced from synthetic, noiseless, harmonic time-series that can include a centralized gap, spanning 0-99% of the time-series. The gap may be in the form of a data jump, or an array of zeros. The gap can be abrupt or tapered using a Tukey filter of various lengths.
 
