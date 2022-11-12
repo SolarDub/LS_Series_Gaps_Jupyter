@@ -4,7 +4,7 @@ This routine analyses the effect of data gaps on the spectral output of the Lomb
 The gaps may be padded with zeros or simple jumps from the end of one data sequence to the beginning of the next.
 The gaps may also be cut-off abruptly (using an inverse top-hat window function) or tapered through the used of a Tukey filter.
 
-The dataset is simple: 1000 points with a 0.01 day cadence, resulting in a 10-day time-series. It comprises of a superposition of four in-phase sinusoidal signals with frequencies of 1, 2, 3 and 4 cycles per day, respectively, all with unit amplitudes.
+The dataset is simple: 1000 points with a 0.01 day cadence, resulting in a 10-day time-series. It comprises of a superposition of four in-phase sinusoidal signals with frequencies of 10, 20, 30 and 40 cycles per day, respectively, all with unit amplitudes.
 
 ----
 
@@ -25,9 +25,9 @@ With zero gap, the Lomb-Scargle spectrum displays all four signals with unit amp
 
 ----
 
-![0pcSpecAllPeaks](https://user-images.githubusercontent.com/81772405/201450431-fd3dfa3e-6816-4735-8c62-a61f5aaba260.jpg) ![0pcSpecOnePeak](https://user-images.githubusercontent.com/81772405/201450434-43ca9895-dece-4455-be6a-0607b214f215.jpg)
+<img src="https://user-images.githubusercontent.com/81772405/201450431-fd3dfa3e-6816-4735-8c62-a61f5aaba260.jpg" width="490" /><img src="https://user-images.githubusercontent.com/81772405/201450434-43ca9895-dece-4455-be6a-0607b214f215.jpg" width="500" />
 
-**Figure 1:** Synthetic 10-day time-series at 0.01-day candence (*blue*). Modulating this signal with an inverse top-hat window function (*green dashes*) creates an abrupt gap within the center of the time-series. The entry and exit points of the gap may be tapered to and from zero by modulating the signal with a new window-function (red), where the inverse top-hat is tapered with a Tukey filter of a user-defined size (101 elements in this case).
+**Figure 2:** Lomb-Scargle frequency spectrum of a time-series with no gap and no noise. (*Left*) The full spectrum showing the four components of the time series. (*Right*) The 10 cycles per day unit-amplitude peak shows no artifacts. It drops immediately to zero at 0.1 cycles per day either side of the peak, relating to the frequency resolution of the spectrum.
 
 ----
 
