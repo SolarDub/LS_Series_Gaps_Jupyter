@@ -25,7 +25,7 @@ With zero gap, the Lomb-Scargle spectrum displays all four signals with unit amp
 
 ----
 
-<img src="https://user-images.githubusercontent.com/81772405/201450431-fd3dfa3e-6816-4735-8c62-a61f5aaba260.jpg" width="490" /><img src="https://user-images.githubusercontent.com/81772405/201450434-43ca9895-dece-4455-be6a-0607b214f215.jpg" width="500" />
+<img src="https://user-images.githubusercontent.com/81772405/201450431-fd3dfa3e-6816-4735-8c62-a61f5aaba260.jpg" width="390" /><img src="https://user-images.githubusercontent.com/81772405/201450434-43ca9895-dece-4455-be6a-0607b214f215.jpg" width="400" />
 
 **Figure 2:** Lomb-Scargle frequency spectrum of a time-series with no gap and no noise. (*Left*) The full spectrum showing the four components of the time series. (*Right*) The 10 cycles per day unit-amplitude peak shows no artifacts. It drops immediately to zero at 0.1 cycles per day either side of the peak, relating to the frequency resolution of the spectrum.
 
